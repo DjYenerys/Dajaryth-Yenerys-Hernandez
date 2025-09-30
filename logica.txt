@@ -1,6 +1,6 @@
 Problema
 Licores Bomba es una licorería ubicada en un sector de comercio abundante debido a esto, en la licorería suele haber fila para realizar las compras algo que no es del agrado de muchos. 
-Para dar solución a este problema los dueños de la licorería decidieron crear una aplicación web la cual permita a los clientes elegir el tipo de licor para que los clientes solo tengan que ir con la lista del pedido 
+Para dar solución a este problema los dueños de la licorería decidieron crear un sistema el cual permita a los clientes elegir el tipo de licor para que los clientes solo tengan que ir con la lista del pedido 
 dando como resultado que aunque el flujo de clientes sea abundante, el despacho sea eficiente y un poco más rápido.
 Definir entradas y salidas
 Cuando una persona ingrese a la aplicación web:
@@ -27,4 +27,5 @@ El usuario deberá insertar la cantidad de botellas que desee llevar.
 •	Si la respuesta del usuario es “SI”: El usuario será redirigido al paso 2.
 •	Si la respuesta del usuario es “NO”: Se imprime la factura.
 8.	Fin.
+
 
