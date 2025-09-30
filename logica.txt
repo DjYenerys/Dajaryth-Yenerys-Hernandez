@@ -1,0 +1,30 @@
+Problema
+Licores Bomba es una licorería ubicada en un sector de comercio abundante debido a esto, en la licorería suele haber fila para realizar las compras algo que no es del agrado de muchos. 
+Para dar solución a este problema los dueños de la licorería decidieron crear una aplicación web la cual permita a los clientes elegir el tipo de licor para que los clientes solo tengan que ir con la lista del pedido 
+dando como resultado que aunque el flujo de clientes sea abundante, el despacho sea eficiente y un poco más rápido.
+Definir entradas y salidas
+Cuando una persona ingrese a la aplicación web:
+1.	Verificar la edad del usuario
+Si el usuario es < 18 años, no puede acceder a la página.
+Si es >= 18 años, puede continuar con el proceso de compra.
+2.	¿qué tipo de bebida busca? 
+•	Opción 1: Licores nacionales.
+•	Opción 2: Licores destilados.
+•	Opción 3: Licores tradicionales.
+3.	Dependiendo del tipo de licor que le usuario haya elegido, se muestran las opciones que contiene ese tipo de licor:
+•	Licores nacionales ->O => cerveza y aguardiente.
+•	Licores destilados -> O => Ron, Vino, Vodka.
+•	Licores tradicionales -> O => Canelazo, Chicha, Guarapo.
+4.	¿Desea volver al menú anterior?
+•	Si la respuesta del usuario es “SI”: El usuario será redirigido al paso 2.
+•	Si la respuesta del usuario es “NO”: Se continua con el proceso de compra.
+5.	¿Cuántas botellas desea llevar?¬¬
+El usuario deberá insertar la cantidad de botellas que desee llevar.
+6.	Se mostrará una previsualización de la compra y se le preguntará al usuario si desea llevar otra opción del tipo de licor que haya elegido.
+•	Si la respuesta del usuario es “SI”: El usuario será redirigido al paso 3.
+•	Si la respuesta del usuario es “No”: Se continua con el proceso de compra.
+7.	Se le preguntará al usuario si desea otro tipo de licor de la tienda.
+•	Si la respuesta del usuario es “SI”: El usuario será redirigido al paso 2.
+•	Si la respuesta del usuario es “NO”: Se imprime la factura.
+8.	Fin.
+
