@@ -1,0 +1,30 @@
+### Create prescription detail
+POST http://localhost:3000/prescription-detail
+Content-Type: application/json
+
+{
+    "dose": "500mg",
+    "duration": 20,
+    "instrucitons": "Take 500mg every 20 days every 8 hours",
+    "prescriptionId": 1,
+    "medicineId": 1
+}
+
+### Find all prescription details
+GET http://localhost:3000/prescription-detail
+
+### Find one prescription detail
+GET http://localhost:3000/prescription-detail/1
+
+### Update prescription detail
+PATCH http://localhost:3000/prescription-detail/1
+Content-Type: application/json
+
+{
+    "dose": "200mg",
+    "duration": 20,
+    "instrucitons": "Take 200mg every 20 days"
+}
+
+### Delete prescription detail
+DELETE http://localhost:3000/prescription-detail/1

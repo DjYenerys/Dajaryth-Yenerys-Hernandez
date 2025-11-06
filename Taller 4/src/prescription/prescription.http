@@ -1,0 +1,29 @@
+### Create prescription
+POST http://localhost:3000/prescription
+Content-Type: application/json
+
+{
+    "date": "2021-03-01T00:00:00.000Z",
+    "observations": "Cita control de la presión arterial",
+    "quantity": 10,
+    "duration": 10,
+    "appointmentId": 1,
+    "medicineId": 1
+}
+
+### Get all prescriptions
+GET http://localhost:3000/prescription
+
+### Get prescription by id
+GET http://localhost:3000/prescription/1
+
+### Update prescription
+PATCH http://localhost:3000/prescription/1
+Content-Type: application/json
+
+{
+    "quantity": 5
+}
+
+### Delete prescription
+DELETE http://localhost:3000/prescription/1 

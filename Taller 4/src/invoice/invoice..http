@@ -1,0 +1,29 @@
+### Create Invoice
+POST http://localhost:3000/invoice
+Content-Type: application/json
+
+{
+    "total": 100,
+    "metodo_pago": "transferencia",
+    "estado_pago": "pendiente",
+    "id_cita": 1,
+    "id_paciente": 4
+}
+
+### Find All Invoice
+GET http://localhost:3000/invoice
+
+### Find One Invoice
+GET http://localhost:3000/invoice/1
+
+### Update Invoice
+PATCH http://localhost:3000/invoice/1
+Content-Type: application/json
+
+{
+    "total": 200,
+    "estado_pago": "pagado"
+}
+
+### Delete Invoice
+DELETE http://localhost:3000/invoice/2
