@@ -1,0 +1,25 @@
+### Post create specialty
+POST http://localhost:3000/specialty
+Content-Type: application/json
+
+{
+    "name": "Neurologia",
+    "description": "Este es un ejemplo de specialty"
+}
+
+### Get all specialties
+GET http://localhost:3000/specialty
+
+### Get one specialty
+GET http://localhost:3000/specialty/2
+
+### Update specialty
+PATCH http://localhost:3000/specialty/2
+Content-Type: application/json
+
+{
+    "description": "Este es un ejemplo de specialty relacionada con el sistema nervioso"
+}
+
+### Delete specialty
+DELETE http://localhost:3000/specialty/1

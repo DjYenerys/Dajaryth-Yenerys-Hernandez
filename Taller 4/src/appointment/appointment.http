@@ -1,0 +1,30 @@
+### Create appointment
+POST http://localhost:3000/appointment
+Content-Type: application/json
+
+{
+    "date": "2021-03-01T00:00:00.000Z",
+    "reason": "Cita control de la presión arterial",
+    "notes": "Paciente refiere mareos",
+    "status": "scheduled",
+    "doctor_id": 2,
+    "patient_id": 4,
+    "office_id": 1
+}
+
+### Get all appointments
+GET http://localhost:3000/appointment
+
+### Get appointment by id
+GET http://localhost:3000/appointment/1
+
+### Update appointment
+PATCH http://localhost:3000/appointment/1
+Content-Type: application/json
+
+{
+    "date": "2025-03-01T00:00:00.000Z"
+}
+
+### Delete appointment       
+DELETE http://localhost:3000/appointment/1
