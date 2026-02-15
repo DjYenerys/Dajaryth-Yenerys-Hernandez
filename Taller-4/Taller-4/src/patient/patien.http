@@ -1,0 +1,27 @@
+### Create Patient
+POST http://localhost:3000/patient
+Content-Type: application/json
+{
+    "bloodType": "A+",
+    "insurance": "contributive",
+    "medicalHistory": "I have a fever",
+    "personId": 2
+}
+
+### Find All Patient
+GET http://localhost:3000/patient
+
+### Find One Patient
+GET http://localhost:3000/patient/3
+
+### Update Patient
+PATCH http://localhost:3000/patient/3
+Content-Type: application/json
+
+{
+    "bloodType": "B-",
+    "medicalHistory": "I have a fever"
+}
+
+### Delete Patient
+DELETE http://localhost:3000/patient/2

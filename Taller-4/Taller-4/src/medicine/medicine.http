@@ -1,0 +1,29 @@
+### Create medicine
+POST http://localhost:3000/medicine
+Content-Type: application/json
+
+{
+    "name": "Lorazepam",
+    "type": "tablet",
+    "presentation": "100mg",
+    "stock": 50,
+    "description": "Este medicamento es para el tratamiento de la depresión",
+    "price": "80"
+}
+
+### Get all medicines
+GET http://localhost:3000/medicine
+
+### Get medicine by id
+GET http://localhost:3000/medicine/1
+
+### Update medicine
+PATCH http://localhost:3000/medicine/1
+Content-Type: application/json
+
+{
+    "stock": 20
+}
+
+### Delete medicine       
+DELETE http://localhost:3000/medicine/1

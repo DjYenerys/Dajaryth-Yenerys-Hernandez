@@ -1,0 +1,28 @@
+### Create Office
+POST http://localhost:3000/office
+Content-Type: application/json
+
+{
+    "num_consultorio": 2,
+    "piso": 1,
+    "disponible": true
+}
+
+### Find All Office
+GET http://localhost:3000/office
+
+### Find One Office
+GET http://localhost:3000/office/1
+
+### Update Office
+PATCH http://localhost:3000/office/1
+Content-Type: application/json
+
+{
+    
+    "piso": 2,
+    "disponible": false
+}
+
+### Delete Office
+DELETE http://localhost:3000/office/2

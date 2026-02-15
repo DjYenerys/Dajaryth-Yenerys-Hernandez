@@ -1,0 +1,44 @@
+# Create Person - Juan (Doctor)
+POST http://localhost:3000/person
+Content-Type: application/json
+
+{
+    "name": "Laura",
+    "lastName": "Diaz",
+    "document": "998754567",
+    "birthDate": "1900-01-01",
+    "phone": "87975456",
+    "email": "laura@gmail.com",
+    "password": "laura679",
+    "role": "admin" 
+}
+
+###
+
+# Find All Person
+GET http://localhost:3000/person
+
+###
+
+# Find One Person
+GET http://localhost:3000/person/22
+
+###
+
+# Update Person
+PATCH http://localhost:3000/person/21
+Content-Type: application/json
+
+{
+    "role": "Doctor"
+}
+
+###
+
+# Delete Person
+DELETE http://localhost:3000/person/21
+
+###
+
+# Find By Role
+GET http://localhost:3000/person/role/paciente
